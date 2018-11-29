@@ -1,0 +1,11 @@
+#!/usr/bin/env php
+<?php
+
+require_once __DIR__ .'/../src/Person.php';
+require_once __DIR__ .'/../src/console-helper.php';
+
+$john = new Person('John', 'john@example.com');
+writeln($john->getUsername());
+
+$john = new Person('Alisa', 'alisa@example.com');
+writeln($john->getUsername());
